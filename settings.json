@@ -120,7 +120,7 @@
   },
   "editor.hideCursorInOverviewRuler": true,
   "editor.minimap.enabled": false,
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
     "trafficLightPosition": {
@@ -141,14 +141,15 @@
   },
   "apc.monospace.font.family": "JetBrains Mono",
   "apc.stylesheet": {
-    ".title-label": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    ".pane-body": "padding: 8px",
+    ".title-label": "display: none !important",
+    ".editor-actions": "display: none !important",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px !important",
+    ".pane-header": "padding: 0 8px !important",
+    ".pane-body": "padding: 8px !important",
     ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+    ".monaco-list-row": "border-radius: 4px; !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none; !important",
+    ".title-actions": "width: 100% !important"
   },
   "editor.scrollbar.vertical": "hidden",
   "explorer.sortOrder": "foldersNestsFiles",
@@ -246,8 +247,5 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vscode_custom_css.imports": [
-    "file:///Documents/custom/vscode-custom.css"
-  ],
   "git.autofetch": true
 }

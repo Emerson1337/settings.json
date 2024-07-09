@@ -1,10 +1,13 @@
 {
   "workbench.startupEditor": "newUntitledFile",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 2,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "extensions.ignoreRecommendations": true,
   "typescript.tsserver.log": "off",
   "files.associations": {
@@ -26,7 +29,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "terminal.integrated.showExitAlert": false,
   "[prisma]": {
     "editor.formatOnSave": true
@@ -104,13 +106,10 @@
   "window.commandCenter": false,
   "git.openRepositoryInParentFolders": "always",
   "symbols.hidesExplorerArrows": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "workbench.editor.empty.hint": "hidden",
   "update.showReleaseNotes": false,
   "security.promptForLocalFileProtocolHandling": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "bottom",
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
@@ -136,20 +135,17 @@
     "height": 24
   },
   "apc.font.family": "JetBrains Mono",
-  "apc.parts.font.family": {
-    "sidebar": "JetBrains Mono",
-  },
-  "apc.monospace.font.family": "JetBrains Mono",
   "apc.stylesheet": {
     ".title-label": "display: none !important",
     ".editor-actions": "display: none !important",
     ".nosidebar .inline-tabs-placeholder": "width: 75px !important",
     ".pane-header": "padding: 0 8px !important",
-    ".pane-body": "padding: 8px !important",
+    ".pane-body": "padding: 8px !important;",
+    ".explorer-folders-view": "--row-font-size: 14px !important",
     ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px; !important",
+    ".monaco-list-row": "border-radius: 4px; !important;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none; !important",
-    ".title-actions": "width: 100% !important"
+    ".title-actions": "width: 100% !important",
   },
   "editor.scrollbar.vertical": "hidden",
   "explorer.sortOrder": "foldersNestsFiles",
@@ -161,6 +157,10 @@
   },
   "explorer.fileNesting.enabled": true,
   "cSpell.userWords": [
+    "aberta",
+    "agendamento",
+    "agendamentos",
+    "Baseload",
     "bootcamp",
     "chakra",
     "checkin",
@@ -168,9 +168,11 @@
     "clsx",
     "Codegen",
     "datadog",
+    "dateselector",
     "Datetime",
     "dayjs",
     "Dotenv",
+    "ecoplanet",
     "Elysia",
     "esbenp",
     "esbuild",
@@ -180,14 +182,19 @@
     "ffprobe",
     "Hasher",
     "Hono",
+    "horarios",
     "ilike",
     "IUGU",
     "jamjuree",
     "jupiter",
+    "kpis",
     "liveblocks",
     "LIVEBLOCKS",
     "lockb",
+    "lotties",
+    "lucide",
     "Marguerita",
+    "meses",
     "middlewares",
     "mixpanel",
     "monaco",
@@ -197,9 +204,11 @@
     "Omni",
     "Onboarded",
     "pallas",
+    "Peakload",
     "postgres",
     "postgresql",
     "prefetch",
+    "Pressable",
     "reactflow",
     "roboto",
     "rocketseat",
@@ -208,17 +217,24 @@
     "Sandpack",
     "shiki",
     "skylab",
+    "spotmarket",
     "sqlite",
     "stylesheet",
     "supergraph",
     "svgr",
+    "Swipeable",
+    "Swiper",
     "sympla",
     "tailwindcss",
+    "tanstack",
+    "Tappable",
     "textblock",
+    "Tion",
     "tiptap",
     "trpc",
     "TRPC",
     "tsup",
+    "Typeorm",
     "unfollow",
     "Unfollow",
     "unform",
@@ -226,13 +242,12 @@
     "unmark",
     "upsert",
     "Usuario",
-    "WEBPUSH"
+    "uuidv",
+    "WEBPUSH",
+    "YYYYMMDDH"
   ],
-  "workbench.colorTheme": "Min Dark",
-  "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "editor.smoothScrolling": true,
-
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -245,7 +260,85 @@
     "editor.wordBasedSuggestions": "off"
   },
   "[typescript]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.autofetch": true
+  "git.autofetch": true,
+  // VIM CONFIG
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "git.confirmSync": false,
+  "css.lint.unknownAtRules": "ignore",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.format": "${author, }${date}, ${ago}",
+  "gitlens.defaultDateFormat": "DD/MM/YYYY - hh:mm",
+  "gitlens.defaultDateLocale": null,
+  "window.density.editorTabHeight": "compact",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "git.ignoreRebaseWarning": true,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.colorTheme": "Min Dark"
 }
